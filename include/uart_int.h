@@ -27,6 +27,8 @@ extern void uart_handler(UART* up);
 extern int do_rx(UART* up);
 extern int do_tx(UART* up);
 extern int uart_init();
+extern int ugetc(UART* up);
+extern int uputc(UART* up, char c);
 extern int uprints(UART* up, char* s);
 extern int ugets(UART* up, char* s);
 extern int uprintf(UART* up, const char* fmt, ...);
